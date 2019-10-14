@@ -19,7 +19,12 @@ Define "ending" as the 1st index of a an interval. "Beginning": 0th
     2. Greedy
         a. With everything sorted, we can just linearly search through
 
+Time:
+Define n as the length of intervals
+O(n * Log n). We use built in sort to sort all the intervals which is standard n * logn. Then we loop through it n times.
 
+Space:
+O(n) where n is the number of intervals. Our return array could be the exact same elements as our intervals array.
 
 */
 // O(NLogN) - Sorting | second part is linear search 

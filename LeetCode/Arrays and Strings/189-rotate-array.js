@@ -1,5 +1,12 @@
 /*
 
+Time:
+O(n) for n length of array. We reverse from 0 to k and k + 1 to n. We also reverse from 0 to n.
+So we have O(k/2 + (n-k-1)/2 + n / 2) =~ O(2n) = O(n)
+
+Space:
+We move in place therefore it is O(1).
+
 
 */
 /**

@@ -17,6 +17,16 @@ Output:
   [1,2],
   []
 ]
+
+Time:
+We have n as the length of nums.
+Each time we pop off a number, we look at the length of perms and double it. If we have 2 nums, we will have 4.
+If we have 5 nums, we will have 32.
+Therefore, there are 2^n loops.
+Since perms[i].slice() will be often O(n), we can consider the time complexity to be about O(2^n * n).
+
+Space:
+O(2^n * n) as we will have 2^n arrays in perms each often of length n.
 */
 
 /**

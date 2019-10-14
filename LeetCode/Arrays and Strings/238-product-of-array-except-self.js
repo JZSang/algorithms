@@ -11,6 +11,12 @@ Note: Please solve it without division and in O(n).
 Follow up:
 Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)
 
+Time:
+Two passes of the array with O(1) operations => O(n) where n is the length of the array
+
+Space:
+Assuming we do NOT care about the return answer array it is O(1). We only change the values inside answer.
+
 */
 /**
  * @param {number[]} nums
