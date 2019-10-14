@@ -3,8 +3,11 @@
 ## Coding Questions
 ### Before you start
 1. Ask assumptions/clarifications
-2. Imagine the brute force answer
-3. Question how you would perform the operation on a smaller data set (3 or 4 large)
+2. Listen carefully!
+3. Draw an example
+4. Imagine the brute force answer
+5. Question how you would perform the operation on a smaller data set (3 or 4 large)
+6. THEN FINALLY IMPLEMENT THE CODE. Notice there are a lot of steps beforehand
 
 ### During your code
 1. Don't jump in straight away!
@@ -17,7 +20,7 @@
 ---
 ## Questions afterwards
 1. Personal achievements, challenges?
-2. Why do you work her?
+2. Why do you work here?
 3. Intern other past works
 4. Show enthusiasm/interest questions
 
