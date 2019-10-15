@@ -24,6 +24,24 @@ Example 3:
 Input: N = 5, dislikes = [[1,2],[2,3],[3,4],[4,5],[1,5]]
 Output: false
 
+Time:
+O(N + dislikes). We visit each node in the graph adjacency list once. Then if 
+the graph contains a node with edges, we traverse those edges and nodes till the very ends.
+We have a "visited" storage in color, which means once we traverse an edge or node, we don't traverse
+through it all again. So anytime we are about to revisit an edge or node, it becomes an O(1) operation.
+
+Space:
+Our recursive call stack will be at most N, assuming that our graph is just a linked list at the worst case.
+O(N) space.
+
+It should be noted that this a lot like the graph coloring problem. However, the backtracking is implicit.
+If we have B -> R -> B -> _ <- R
+We will try R, and then when we check the next thing (assuming we have the general graph coloring problem),
+we realise we must go back and change our value. This time we have B, which we know is going to fail because
+we only tried R in the first place to be different from B. Therefore, we don't need to backtrack. As soon as we
+check that the next thing is a mismatch, we immediately say that this is not possible.
+
+
 */
 
 /**
