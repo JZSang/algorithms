@@ -29,7 +29,7 @@
     return this.items[this.items.length - 1];
   }
   size() {
-      return this.item.length;
+      return this.items.length;
   }
 }
 
@@ -44,8 +44,9 @@ class Queue {
     }
 
     dequeue() {
-        if (this.stack2.size === 0) {
-            for (let i = 0; i < this.stack1.size; i++) {
+        if (this.stack2.size() === 0) {
+            let size = this.stack1.size();
+            for (let i = 0; i < size; i++) {
                 this.stack2.push(this.stack1.pop());
             }
         }
@@ -58,8 +59,7 @@ let queue = new Queue();
 queue.enqueue(1);
 queue.enqueue(2);
 queue.enqueue(3);
+console.log(queue.dequeue());
 queue.enqueue(4);
 queue.enqueue(5);
-for (let i = 0; i < 5; i++) {
-    console.log(queue.de)
-}
+console.log(queue.dequeue())
