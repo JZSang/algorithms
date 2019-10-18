@@ -8,7 +8,7 @@ function validator(string) {
         } else if (string[i] === "[") {
             stack.push("]");
         } else if (string[i] === ")" || string[i] === "}" || string[i] === "]") {
-            if (stack.length === 0) return false // important
+            if (stack.length === 0) return false // check if too many closers
             if (stack[stack.length-1] === string[i]) {
                 stack.pop();
             } else {
@@ -16,7 +16,7 @@ function validator(string) {
             }
         }
     }
-    return stack.length === 0;
+    return stack.length === 0; // check if too many openers
 }
 
 console.log(validator("{ [ ( ] ) }"))
