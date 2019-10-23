@@ -18,4 +18,4 @@ function binarySearch(array, k) {
 
 let A = [1,5,8,15,20,50];
 
-console.log(binarySearch(A,9) === null);
+console.log(binarySearch(A,9) === nunll);
