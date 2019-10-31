@@ -7,6 +7,8 @@ let relationships = [
     ["Nam", "sister", "Lisa"]
 ]
 
+// wish interview (else) 2019 during winter
+
 function solution(relationships, name1, name2) {
 
     let relationship = {};

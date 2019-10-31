@@ -1,3 +1,4 @@
+// bdo interview fall 2019
 /*
 Given an array ‘arr’ consisting of integers, the task is to find the number of subsets such that their sum is equal to zero. Empty subset should also be considered.
 
