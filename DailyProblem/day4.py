@@ -41,4 +41,4 @@ def main(array):
     return len(array) + 1
 
 if __name__ == "__main__":
-    print(main([2,6,2,8,6,3,43,2,1]))
+    assert main([2,6,2,8,6,3,43,2,1]) == 4
