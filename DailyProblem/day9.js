@@ -8,7 +8,7 @@ Follow-up: Can you do this in O(N) time and constant space?
 
 */
 
-let A = [2,4,6,2,5];
+let A = [-7, -2, -3, -1];
 
 console.log(solution(A));
 
@@ -19,7 +19,7 @@ function solution(array) {
     array[1] = Math.max(prev, array[1]);
     
     for (let i = 2; i < array.length; i++) {
-        array[i] = Math.max(array[i-1], array[i-2] + array[i]);
+        array[i] = Math.max(array[i-1], array[i-2] + array[i], array[i]);
     }
     return array[array.length-1];
 }
